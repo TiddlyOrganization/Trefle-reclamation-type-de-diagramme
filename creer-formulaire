@@ -1,0 +1,106 @@
+name: Réclamation de diagramme Trèfle
+description: Demande de création ou modification d’un diagramme pour l’élément Trèfle.
+title: "[Diagramme] - "
+labels: ["diagramme", "trefle", "reclamation"]
+body:
+  - type: dropdown
+    id: type-diagramme
+    attributes:
+      label: Type de diagramme souhaité
+      description: Choisis le type de diagramme que tu veux créer pour Trèfle.
+      options:
+        - Diagramme de flux (Flowchart)
+        - Diagramme de séquence (Sequence)
+        - Diagramme de modules (Block Diagram)
+        - Diagramme de structure (Class/Object)
+        - Diagramme de relations (ERD)
+        - Carte mentale (Mindmap)
+        - Diagramme de pipeline (CI/CD)
+        - Diagramme d’état (State Machine)
+        - Diagramme de réseau (Network)
+        - Diagramme de composants (Component)
+        - Autre (préciser dans la description)
+      required: true
+
+  - type: dropdown
+    id: objectif
+    attributes:
+      label: Objectif du diagramme
+      description: À quoi servira ce diagramme ?
+      options:
+        - Décrire un worflowe
+        - Décrire un module
+        - Décrire un univers
+        - Décrire un système
+        - Décrire une propagation
+        - Décrire une idée
+        - Décrire une architecture
+        - Autre
+      required: true
+
+  - type: dropdown
+    id: element-trefle
+    attributes:
+      label: Élément Trèfle concerné
+      description: Quel élément du système Trèfle est lié à ce diagramme ?
+      options:
+        - Module
+        - Synclone
+        - Flux
+        - Moteur interne
+        - Univers
+        - Extension
+        - TiddlyWiki
+        - Super Ferme
+        - Autre
+      required: true
+
+  - type: dropdown
+    id: niveau-detail
+    attributes:
+      label: Niveau de détail
+      options:
+        - Simple
+        - Moyen
+        - Complexe
+        - Expert
+      required: true
+
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      description: Décris le contexte du diagramme en quelques phrases.
+      placeholder: "Exemple : Ce diagramme doit représenter le worflowe entre le module X et le synclone Y..."
+      required: true
+
+  - type: textarea
+    id: contraintes
+    attributes:
+      label: Contraintes particulières
+      description: Y a-t-il des contraintes ou règles spécifiques ?
+      placeholder: "Exemple : ordre strict, modules obligatoires, compatibilité GitHub ↔ GitLab..."
+      required: false
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format souhaité
+      options:
+        - Texte
+        - Schéma ASCII
+        - JSON
+        - Markdown
+        - Autre
+      required: true
+
+  - type: dropdown
+    id: urgence
+    attributes:
+      label: Niveau d'urgence
+      options:
+        - Normal
+        - Important
+        - Urgent
+        - Critique
+      required: true
