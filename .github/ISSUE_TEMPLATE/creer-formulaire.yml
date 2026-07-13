@@ -20,6 +20,7 @@ body:
         - Diagramme de réseau (Network)
         - Diagramme de composants (Component)
         - Autre (préciser dans la description)
+    validations:
       required: true
 
   - type: dropdown
@@ -36,6 +37,7 @@ body:
         - Décrire une idée
         - Décrire une architecture
         - Autre
+    validations:
       required: true
 
   - type: dropdown
@@ -53,6 +55,7 @@ body:
         - TiddlyWiki
         - Super Ferme
         - Autre
+    validations:
       required: true
 
   - type: dropdown
@@ -64,6 +67,7 @@ body:
         - Moyen
         - Complexe
         - Expert
+    validations:
       required: true
 
   - type: textarea
@@ -72,6 +76,7 @@ body:
       label: Contexte
       description: Décris le contexte du diagramme en quelques phrases.
       placeholder: "Exemple : Ce diagramme doit représenter le worflowe entre le module X et le synclone Y..."
+    validations:
       required: true
 
   - type: textarea
@@ -80,6 +85,7 @@ body:
       label: Contraintes particulières
       description: Y a-t-il des contraintes ou règles spécifiques ?
       placeholder: "Exemple : ordre strict, modules obligatoires, compatibilité GitHub ↔ GitLab..."
+    validations:
       required: false
 
   - type: dropdown
@@ -92,6 +98,7 @@ body:
         - JSON
         - Markdown
         - Autre
+    validations:
       required: true
 
   - type: dropdown
@@ -103,4 +110,5 @@ body:
         - Important
         - Urgent
         - Critique
+    validations:
       required: true
