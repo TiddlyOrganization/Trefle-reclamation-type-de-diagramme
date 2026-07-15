@@ -29,7 +29,7 @@ body:
       label: Objectif du diagramme
       description: À quoi servira ce diagramme ?
       options:
-        - Décrire un worflowe
+        - Décrire un worKflow
         - Décrire un module
         - Décrire un univers
         - Décrire un système
